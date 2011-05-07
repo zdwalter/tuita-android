@@ -1,0 +1,53 @@
+phonegap-android-terminal-quickstart
+Page history last edited by AveMaria 3 months ago
+Requirements
+Building The Sample Project
+
+Buy DCUO Gold Buy DC Universe Online Gold DC Universe Online Gold DCUO Gold DCUO Gold cheap dc universe online gold DCUO Gold cheap DCUO Gold dcuo gold cheap dc universe online gold dcuo gold dc universe online gold dcuo gold
+This is a tutorial for working with PhoneGap for Android on a terminal with PhoneGap 0.9.2 and 0.9.3.
+ 
+Requirements
+ 
+It is assumed that you have the Android SDK installed and working. If not, then you need to install it before proceeding. You can find the download and installation instructions here. Also, ensure that you have created at least one Android virtual device (AVD). You will need an AVD to run your project in the Android emulator. You should have the Android tools and android platform-tools folders listed in your system path. Both these folders are found inside your Android installation directory.
+ 
+You also need to:
+Download the latest copy of PhoneGap and extract its contents. We are only interested in the Android directory. 
+ 
+Have a workable installation of ant. If needed, add the bin folder of your ant installation to the system path. Set the environment variable ANT_HOME to the ant installation folder.
+ 
+ 
+Building The Sample Project
+ 
+In terminal, navigate to your newly downloaded copy of PhoneGap 0.9.2 and go into the folder android/sample.
+ 
+Now get a list of targets by typing android list targets from the command line.
+ 
+Now type "android update project -p . -t #" without quotes into terminal to add/update the necessary files. Replace the pound sign (#) with the ID to use as found from the list targets command above.
+ 
+
+ 
+ 
+Now kick up an emulator or plug in a device. If you are plugging in a device (recommended) skip the next two screens
+ 
+Emulator can be started with Android AVD manager which can be started by running "android" from the command line.
+
+ 
+Select the virtual device you wish to test on and click start
+
+ 
+Wait for your emulator to load.
+ 
+Finally, to build and run, in terminal type "ant debug install" without quotes.
+ 
+Now you should see the sample app loaded in your emulator/devices!
+ 
+
+ 
+Notes
+ 
+Sometimes ant debug install will fail due to it not seeing any devices. To fix this problem in terminal type "adb kill-server" than "adb start-server" then when you type "adb devices" you should see a list of connected devices.
+ 
+Now you have the sample project running! Feel free to edit index.html and make it  your own project!
+ 
+A helpful tool to debug in android is logcat. To use logcat type "adb logcat" in terminal.
+
